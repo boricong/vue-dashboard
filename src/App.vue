@@ -6,7 +6,8 @@
       <router-link to="/about">About</router-link> |
       <router-link to="/about/child">Child</router-link> |
       <router-link to="/aggrid">AgGrid</router-link> |
-      <router-link to="/agtable">Table</router-link>
+      <router-link to="/agtable">Table</router-link> |
+      <router-link to="/vuex">Vuex</router-link>
     </div>
     <!-- root component에 router-view 추가. 이곳에 router가 component를 그린다. -->
     <router-view />

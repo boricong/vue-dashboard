@@ -45,6 +45,11 @@ const routes = [
     name: "Table",
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/AgTable.vue")
+  },
+  {
+    path: "/vuex",
+    //name: "VuexTest",
+    component: () => import("../views/VuexTest.vue")
   }
 ];
 
