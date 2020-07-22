@@ -1,11 +1,14 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
+      <!-- router-link가 아닌 a href 사용시 화면이 갱신되는 등 문제 발생 -->
+      <router-link to="/">Home(root)</router-link> |
       <router-link to="/about">About</router-link> |
+      <router-link to="/about/child">Child</router-link> |
       <router-link to="/aggrid">AgGrid</router-link> |
       <router-link to="/agtable">Table</router-link>
     </div>
+    <!-- root component에 router-view 추가. 이곳에 router가 component를 그린다. -->
     <router-view />
   </div>
 </template>
